@@ -127,6 +127,21 @@ a:hover{
     background-position: center;
 }
 
+
+::-webkit-scrollbar {
+    width:5px;
+    height: 5px;
+ }
+     
+::-webkit-scrollbar-track {
+    background:#333;
+ }
+    
+::-webkit-scrollbar-thumb {
+    background: black;
+ }
+
+
 /*  Fim da estilização do banner*/
 
 
