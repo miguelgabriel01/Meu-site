@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel</title>
+    <link rel="stylesheet" href="./public/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Fjalla+One&family=MuseoModerno&display=swap" rel="stylesheet"></head>
+<body>
+    <div id="loading" 
+    style="display: block;
+     background-color: black;
+      width: 100%;
+      height: 669px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('./public/img/img-loading.jpg');
+      background-size: cover;
+      background-position: center;
+      background-color: black;">
+       
+        <p style="color: white; font-size: 40px;"><i>Carregando..</i></p>
+
+    </div>
+    
+    <div id="conteudo" style="display: none">
+
+    <!--  menu e informações iniciais  -->
+    <section class="header">
+        <div id="menu">
+            <h3 id="logo">Little Birds</h3>
+
+                <ul>
+                    <a href="">Sobre</a>
+                    <a href="">Projetos</a>
+                    <a href="">Habilidades</a>
+                    <a href="" id="button">Contatos</a>
+
+                </ul>
+            
+        </div>
+        <div id="info-iniciais">
+            <p id="texto-inicial">  Olá, sou Miguel Gabriel..</p>
+            <div id="img-principal">
+
+            </div>
+
+            <p id="texto-inicial" style="font-size: 17px;">  Programador Jr.</p>
+
+        </div>
+    </section>
+
+    </div>
+    
+    <script>
+        var i = setInterval(function () {
+    
+    clearInterval(i);
+  
+    // OParte responsavel por exibir um conteudo enquanto a pagina carrega:
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("conteudo").style.display = "inline";
+
+}, 6000);
+    </script>
+</body>
+</html>
