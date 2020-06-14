@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miguel</title>
     <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="./public/css/mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Fjalla+One&family=MuseoModerno&display=swap" rel="stylesheet"></head>
 <body>
+    <!--  Esta div será exibida enquanto a pagina carrega  -->
     <div id="loading" 
     style="display: block;
      background-color: black;
@@ -15,7 +17,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url('./public/img/img-loading.jpg');
+      background-image: url('./public/img/loading-img/img-loading.jpg');
       background-size: cover;
       background-position: center;
       background-color: black;">
@@ -24,32 +26,65 @@
 
     </div>
     
-    <div id="conteudo" style="display: none">
+    <div id="conteudo" style="display: none; ">
 
     <!--  menu e informações iniciais  -->
     <section class="header">
         <div id="menu">
             <h3 id="logo">Little Birds</h3>
-
                 <ul>
-                    <a href="">Sobre</a>
-                    <a href="">Projetos</a>
-                    <a href="">Habilidades</a>
-                    <a href="" id="button">Contatos</a>
-
-                </ul>
-            
+                    <a href="#sobre-info" id="link">Sobre</a>
+                    <a href="#" id="link">Projetos</a>
+                    <a href="#infor-tecnologias" id="link">Habilidades</a>
+                    <a href="#" id="button">Contatos</a>
+                </ul>            
         </div>
         <div id="info-iniciais">
             <p id="texto-inicial">  Olá, sou Miguel Gabriel..</p>
-            <div id="img-principal">
-
-            </div>
+            <div id="img-principal"></div>
 
             <p id="texto-inicial" style="font-size: 17px;">  Programador Jr.</p>
 
         </div>
     </section>
+
+    <!--  Informações iniciais sobre o Desenvolvedor  -->
+    <section class="sobre">
+        <p id="sobre-info">
+            Sou Miguel Gabriel, natural de Igarassu-Pernambuco, 
+            tenho 21 anos e estou no último periodo do curso técnico 
+            de informática para a internet, pelo instituto federal de
+            pernambuco(IFPE). a pouco mais de um ano e meio nesta área,
+            venho mostrar um pouco do meu trabalho como desenvolvedor WEB,
+            minhas principais Habilidades, tecnologias ultilizadas e os projetos
+            que trabalhei no decorrer desta caminhada. seja bem -vindo ao meu site,
+            e qualquer duvida pode entrar em contato comigo pelas minhas redes sociais 
+            que são informadas nesta mesma pagina.<br>
+        </p>
+    </section>
+
+    <!-- Informações sobre projetos desenvolvidos -->
+    <section class="tecnologias">
+        
+        <p id="infor-tecnologias">Tecnologias e linguagens de programação utilizadas em meus projetos..</p>
+          
+          <section class="galeria">
+             <slider>
+                <slide><p></p></slide>
+                <slide><p></p></slide>
+                <slide><p></p></slide>
+                <slide><p></p></slide>
+                <slide><p></p></slide>
+             </slider>
+          </section>
+    </section>
+
+    <!-- Lista de tecnologias usadas em meus projetos-->
+    <section class="lista-tecnologias">
+        
+    </section>
+
+
 
     </div>
     
@@ -62,7 +97,11 @@
     document.getElementById("loading").style.display = "none";
     document.getElementById("conteudo").style.display = "inline";
 
-}, 6000);
+}, 60);//tempo de duração*
+
+   
+
     </script>
+    
 </body>
 </html>
