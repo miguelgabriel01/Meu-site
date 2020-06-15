@@ -127,11 +127,11 @@ ul{
     background-position: center;
 }
 
-<<<<<<< HEAD
 ::-webkit-scrollbar {
     width:5px;
     height: 5px;
-=======
+}
+
 
 ::-webkit-scrollbar {
     width:5px;
@@ -146,93 +146,11 @@ ul{
     background: black;
  }
 
-
 /*  Fim da estilização do banner*/
 
-
-/* Estilização para dispositivos moveis */
-@media screen and (max-width: 600px) {
-    .header{
-        width: 100%;
-        height: 650px;
-        /*border: 2px solid red;*/
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;    
-        padding: 20px;       
-        background-image: url('../img/img-banner.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-
-    #menu{
-        width: 100%;
-        height: 200px;
-       /* border: 2px solid green;   */ 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    ul{
-        width: 100%;
-        height: 300px;
-        /*border: 3px solid white;*/
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0%;
-        font-family: 'Arvo', serif;
-        font-family: 'Fjalla One', sans-serif;
-        font-family: 'MuseoModerno', cursive;
-    }
-    
-    a{
-        text-decoration: none;
-        color: gainsboro;
-        font-size: 16px;
-        cursor: pointer;
-        margin: -15px;
-        /*border: 1px solid transparent;*/
-    }
-    /*
-    a:hover{
-        border-bottom: 1px solid white;
-    }*/
-    
-    #button{
-        width: 100px;   
-        height: 50px;
-        border: 1px solid red;
-        border-radius: 8px;    
-        font-size: 17px;
-        transition: filter 0.4s;
-        animation-duration: 0.5s;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        margin-top: -17px;
-        margin-left: -25px;
->>>>>>> 1c96b42998d178e6f3df9c8ad6909c4ccefce80c
-    }
-     
-    ::-webkit-scrollbar-track {
-    background:#333;
-    }
-     
-    ::-webkit-scrollbar-thumb {
-        background: black;
-    }
     
 /*  Fim da estilização do banner*/
 
-<<<<<<< HEAD
 /* Inicio da estilização sobre informações do Desenvolvedor*/
 .sobre{
     width: 100%;
@@ -372,16 +290,3 @@ slide:nth-child(1){
 
  /*Estilização da lista de tecnologias usadas em meus projetos*/
  
-=======
-    #img-principal{
-        width: 300px;
-        height: 150px;
-      /* border: 2px solid gray;*/
-        background-image: url('../img/programador.svg');
-        /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));*/
-        background-size: cover;
-        background-position: center;
-    }
-    
-}
->>>>>>> 1c96b42998d178e6f3df9c8ad6909c4ccefce80c
