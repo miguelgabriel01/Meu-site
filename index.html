@@ -6,23 +6,26 @@
     <title>Miguel</title>
     <link rel="stylesheet" href="./public/css/index.css">
     <link rel="stylesheet" href="./public/css/mobile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Fjalla+One&family=MuseoModerno&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Fjalla+One&family=MuseoModerno&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f34559af3c.js" crossorigin="anonymous"></script>
+</head>
 <body>
+
     <!--  Esta div será exibida enquanto a pagina carrega  -->
     <div id="loading" 
-    style="display: block;
-     background-color: black;
-      width: 100%;
-      height: 669px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url('./public/img/loading-img/img-loading.jpg');
-      background-size: cover;
-      background-position: center;
-      background-color: black;">
+      style="display: block;
+        background-color: black;
+        width: 100%;
+        height: 669px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('./public/img/loading-img/img-loading.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: black;">
        
-        <p style="color: white; font-size: 40px;"><i>Carregando..</i></p>
+         <p style="color: white; font-size: 40px;"><i>Carregando..</i></p>
 
     </div>
     
@@ -32,11 +35,11 @@
     <section class="header">
         <div id="menu">
             <h3 id="logo">Little Birds</h3>
-                <ul>
-                    <a href="#sobre-info" id="link">Sobre</a>
-                    <a href="#" id="link">Projetos</a>
-                    <a href="#infor-tecnologias" id="link">Habilidades</a>
-                    <a href="#" id="button">Contatos</a>
+                <ul class="ul">
+                    <a href="#sobre" id="link">Sobre</a>
+                    <a href="#lista-projetos" id="link">Projetos</a>
+                    <a href="#habilidades" id="link">Habilidades</a>
+                    <a href="#contatos" id="button">Contatos</a>
                 </ul>            
         </div>
         <div id="info-iniciais">
@@ -49,14 +52,14 @@
     </section>
 
     <!--  Informações iniciais sobre o Desenvolvedor  -->
-    <section class="sobre">
+    <section id="sobre">
         <p id="sobre-info">
             Sou Miguel Gabriel, natural de Igarassu-Pernambuco, 
             tenho 21 anos e estou no último periodo do curso técnico 
             de informática para a internet, pelo instituto federal de
             pernambuco(IFPE). a pouco mais de um ano e meio nesta área,
             venho mostrar um pouco do meu trabalho como desenvolvedor WEB,
-            minhas principais Habilidades, tecnologias ultilizadas e os projetos
+            minhas principais Habilidades, tecnologias ultilizadas, e os projetos
             que trabalhei no decorrer desta caminhada. seja bem -vindo ao meu site,
             e qualquer duvida pode entrar em contato comigo pelas minhas redes sociais 
             que são informadas nesta mesma pagina.<br>
@@ -64,7 +67,7 @@
     </section>
 
     <!-- Informações sobre projetos desenvolvidos -->
-    <section class="tecnologias">
+    <section id="habilidades">
         
         <p id="infor-tecnologias">Tecnologias e linguagens de programação utilizadas em meus projetos..</p>
           
@@ -79,16 +82,82 @@
           </section>
     </section>
 
-    <!-- Lista de tecnologias usadas em meus projetos-->
-    <section class="lista-tecnologias">
-        
+    <!-- Titulo da section de projetos-->
+    <section class="titulo-projetos">
+        <p id="titulo-lista">Meus principais projetos desenvolvidos</p>
     </section>
 
+    <!-- Lista de tecnologias usadas em meus projetos-->
+    <section id="lista-projetos">
+
+        <!-- Projetos da YourPet-->
+        <div id="projetos">
+            <img src="./public/img/projetos-img/pj1.png" alt="" id="img-projetos">
+            <p id="texto-info-projetos">Sistema de adoção/doação de pets usando as tecnologias Node.JS, React.JS, React-native, MongoDB, HTML5 e CSS3.</p>
+        </div>
+
+        <!-- Projeto da little birds-->
+        <div id="projetos">
+            <img src="./public/img/projetos-img/pj8.png" alt="" id="img-projetos">
+            <p id="texto-info-projetos">Site de Busca e downloads de HQS em formato PDF usando as tecnologias HTML5 e CSS3. </p>
+        </div>
+
+        <!--  Projeto blog com node js-->
+        <div id="projetos">
+            <img src="./public/img/projetos-img/pj11.png" alt="" id="img-projetos">
+            <p id="texto-info-projetos">Blog sobre tecnologias criado com Node.js, MongoDB e Bootstrap.</p>
+        </div>
+
+        <!--  Projeto Radar escolar-->
+        <div id="projetos">
+            <img src="./public/img/projetos-img/pj13.png" alt="" id="img-projetos">
+            <p id="texto-info-projetos">Sistema de cadastro e comparação de notas das escolas da região metropolitana do Recife usando PHP, Mysql, HTM5 e CSS3 (Projeto desenvolvido em grupo ).</p>
+        </div>
+
+        <div id="projetos">
+            <img src="./public/img/projetos-img/pj14.png" alt="" id="img-projetos">
+            <p id="texto-info-projetos">Sistema de cadastro e comparação de notas das escolas da região metropolitana do Recife usando PHP, Mysql, HTM5 e CSS3 (Projeto desenvolvido em grupo ).</p>
+        </div>
+
+    </section>
+
+    <!-- Section de contatos-->
+    <section id="contatos">
+        <h2></h2>
+        <div id="caixa-email">
+            <div class="form-Email">
+                <h3 id="form-info">Entre em contato para mas informações !</h3>
+                <form>
+                    <input placeholder="Nome"/>
+                    <input placeholder="E-mail"/>
+                       <textarea placeholder="Mensagem" maxlength="500" style='resize:none'></textarea>
+                     
+                     <button class="button-Enviar" type="submit" preventDefault=()>Enviar mensagem</button>
+                     
+                </form>
+            </div>
+        </div>
+
+        <div id="link-contatos">
+             
+                <a href="#" id="contato"><img src="./public/img/iicones/icon12.svg" alt="" id="img-icons"/><i> Igarassu | Pernambuco</i></a>
+                <a href="#" id="contato"><img src="./public/img/iicones/icon13.svg" alt="" id="img-icons"/><i> 081 99276-5185</i></a>
+                <a href="#" id="contato"><img src="./public/img/iicones/icon14.svg" alt="" id="img-icons"/><i> gabrielogabriel10@gmail.com</i></a>
+
+                <div id="icons-contatos">
+                    <a href="https://github.com/miguelgabriel01" id="icons" ><i class="fa fa-github" style="font-size: 50px;" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/Gabriel_8688" id="icons" ><i class="fa fa-twitter" style="font-size: 50px;" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/_miguelgabriel_/" id="icons" ><i class="fa fa-instagram" style="font-size: 50px;" aria-hidden="true"></i></a>
+                    <a href="#" id="icons" ><i class="fa fa-whatsapp" style="font-size: 50px;" aria-hidden="true"></i></a>
+                </div>
+
+        </div>
+    </section>
 
 
     </div>
     
-    <script>
+    <script type="">
         var i = setInterval(function () {
     
     clearInterval(i);
@@ -97,9 +166,7 @@
     document.getElementById("loading").style.display = "none";
     document.getElementById("conteudo").style.display = "inline";
 
-}, 60);//tempo de duração*
-
-   
+}, 40);//tempo de duração*
 
     </script>
     

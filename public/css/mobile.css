@@ -4,9 +4,8 @@
        margin: 0;
        padding: 0;
        box-sizing: border-box;
-
-
    }
+
     /* Banner */
     .header{
         width: 100%;
@@ -25,7 +24,7 @@
     #menu{
         width: 100%;
         height: 200px;
-       /* border: 2px solid green;   */ 
+       /* border: 2px solid green;*/ 
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -86,7 +85,6 @@
        font-family: 'Arvo', serif;
        font-family: 'Fjalla One', sans-serif;
        font-family: 'MuseoModerno', cursive;
-    
     }
     
     #info-iniciais{
@@ -98,7 +96,6 @@
         justify-content: space-around;
         align-items: center;
         margin-bottom: 60px;
-    
     }
     
     #texto-inicial{
@@ -125,9 +122,8 @@
         background-position: center;
     }
 
-    /* Estilização da section sobre o Desenvolvedor */
     /* Inicio da estilização sobre informações do Desenvolvedor*/
-    .sobre{
+    #sobre{
        width: 100%;
        height: 450px;
        display: flex;
@@ -149,10 +145,8 @@
        align-items: center;
     }
 
-    /* Estilização da section dos projetos*/
-
     /* Estilização da section de projetos desenvolvidos*/
-    .tecnologias{
+    #habilidades{
        width: 100%;
        height: 460px;
        display: flex;
@@ -162,6 +156,7 @@
        background-color: #18222D;
        padding: 10px;
     }
+
     .galeria{
        width: 350px;
        height: 450px;
@@ -232,13 +227,13 @@
       background-position: center;   
    }
   
-   slide:nth-child(5){
+    slide:nth-child(5){
       left: 100%;
       animation-delay: 10s;
       background-image: url("../img/techs-imgs/js3.jpeg");
       background-size: cover;
       background-position: center;   
-   }
+    }
   
       
      @keyframes slide{
@@ -249,6 +244,120 @@
         30.0001% { left:-100%; width:0%;}
         100% { left:100%; width:0%;}
      }
-     
+
+  /*Estilização da lista sobre meus projetos*/
+ .titulo-projetos{
+   width: 100%;
+   height: 50px;
+   border: 2px solid orange;
+   display: none;/*
+   justify-content: center;
+   align-items: center;
+   background-color: #010615;*/
+}
+
+
+#lista-projetos{
+   width: 100%;
+   /*padding: 80px;*/
+   height: 2500px;
+   border: 2px solid green;
+   background-color: #010615;
+   display: none;/*
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;*/
+}
+
+
+/* Esilização mobile para a area de contato*/
+
+/*Estilização da seção de contatos*/
+#contatos{
+   width: 100%;
+   height: 350px;
+   /*border: 1px solid orange;*/
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   background-color: #010615; 
+}
+
+#caixa-email{
+   width: 500px;
+   height: 450px;
+   border: 1px solid red;
+   display: none;
+}
+
+/*For de E-mail*/
+/*estilização do form de cadastro de ongs*/
+
+
+
+#link-contatos{
+   width: 500px;
+   height: 400px;
+   /*border: 1px solid green;*/
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   justify-content: center;
+   align-items: center;
+}
+
+
+#contato{
+   text-decoration: none;
+   color: gainsboro;
+   font-size:17px;
+   cursor: pointer;
+   border: 1px solid transparent;
+   /*border: 1px solid red;*/
+   display:flex;
+   width: 100%;
+   height: 80px;
+   align-items: center;
+}
+
+#contato:hover{
+   color: white;
+}
+
+#icons-contatos{
+   width: 100%;
+   height: 150px;
+   border-top: 0.5px solid gainsboro;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: row;
+}
+
+#icons{
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   box-shadow: 0px 0px 1em black;
+   transition:all 0.4s ease-out;
+   animation-duration:3s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+#icons:hover{
+   border: 1px solid black;
+   transform:translateY(-3px);
+   box-shadow: 0px 0px 1em black;
+}
+
+#img-icons{
+   margin-right: 10px;
+}  
         
 }
