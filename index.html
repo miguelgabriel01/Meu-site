@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miguel</title>
-    <link rel="stylesheet" href="./public/css/index.css">
-    <link rel="stylesheet" href="./public/css/mobile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Fjalla+One&family=MuseoModerno&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f34559af3c.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./public/css/index.css">
+      <link rel="stylesheet" href="./public/css/mobile.css">
+      <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Fjalla+One&family=MuseoModerno&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/f34559af3c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -31,7 +31,10 @@
     
     <div id="conteudo" style="display: none; ">
 
-    <!--  menu e informações iniciais  -->
+        <!-- Input responsavel por ativar o modo claro  -->
+        <input type="checkbox" name="" id="light-css">
+    <main>
+            <!--  menu e informações iniciais  -->
     <section class="header">
         <div id="menu">
             <h3 id="logo">Little Birds</h3>
@@ -39,6 +42,7 @@
                     <a href="#sobre" id="link">Sobre</a>
                     <a href="#lista-projetos" id="link">Projetos</a>
                     <a href="#habilidades" id="link">Habilidades</a>
+                    <label id="light-modo" for="light-css" style="cursor: pointer;"><img src="./public/img/banner-imgs/brightness_medium-white-24dp.svg" alt="Alternar modo de visualização" id="img-icons"/></label>
                     <a href="#contatos" id="button">Contatos</a>
                 </ul>            
         </div>
@@ -92,30 +96,30 @@
 
         <!-- Projetos da YourPet-->
         <div id="projetos">
-            <img src="./public/img/projetos-img/pj1.png" alt="" id="img-projetos">
+            <img src="./public/img/projetos-img/pj1.png" alt="Projetos desenvolvidos" id="img-projetos">
             <p id="texto-info-projetos">Sistema de adoção/doação de pets usando as tecnologias Node.JS, React.JS, React-native, MongoDB, HTML5 e CSS3.</p>
         </div>
 
         <!-- Projeto da little birds-->
         <div id="projetos">
-            <img src="./public/img/projetos-img/pj8.png" alt="" id="img-projetos">
+            <img src="./public/img/projetos-img/pj8.png" alt="Projetos desenvolvidos" id="img-projetos">
             <p id="texto-info-projetos">Site de Busca e downloads de HQS em formato PDF usando as tecnologias HTML5 e CSS3. </p>
         </div>
 
         <!--  Projeto blog com node js-->
         <div id="projetos">
-            <img src="./public/img/projetos-img/pj11.png" alt="" id="img-projetos">
+            <img src="./public/img/projetos-img/pj11.png" alt="Projetos desenvolvidos" id="img-projetos">
             <p id="texto-info-projetos">Blog sobre tecnologias criado com Node.js, MongoDB e Bootstrap.</p>
         </div>
 
         <!--  Projeto Radar escolar-->
         <div id="projetos">
-            <img src="./public/img/projetos-img/pj13.png" alt="" id="img-projetos">
+            <img src="./public/img/projetos-img/pj13.png" alt="Projetos desenvolvidos" id="img-projetos">
             <p id="texto-info-projetos">Sistema de cadastro e comparação de notas das escolas da região metropolitana do Recife usando PHP, Mysql, HTM5 e CSS3 (Projeto desenvolvido em grupo ).</p>
         </div>
 
         <div id="projetos">
-            <img src="./public/img/projetos-img/pj14.png" alt="" id="img-projetos">
+            <img src="./public/img/projetos-img/pj14.png" alt="Projetos desenvolvidos" id="img-projetos">
             <p id="texto-info-projetos">Sistema de cadastro e comparação de notas das escolas da região metropolitana do Recife usando PHP, Mysql, HTM5 e CSS3 (Projeto desenvolvido em grupo ).</p>
         </div>
 
@@ -126,13 +130,13 @@
         <h2></h2>
         <div id="caixa-email">
             <div class="form-Email">
-                <h3 id="form-info">Entre em contato para mas informações !</h3>
+                <h3 id="form-info">Entre em contato para mais informações !</h3>
                 <form>
-                    <input placeholder="Nome"/>
-                    <input placeholder="E-mail"/>
-                       <textarea placeholder="Mensagem" maxlength="500" style='resize:none'></textarea>
+                    <input placeholder="Nome"  required="" type="text" name="nome"/>
+                    <input placeholder="E-mail"  required=""type="email" name="email">
+                       <textarea placeholder="Mensagem" maxlength="500" style='resize:none' value="mensagem" required="" name="mensagem"></textarea>
                      
-                     <button class="button-Enviar" type="submit" preventDefault=()>Enviar mensagem</button>
+                     <button class="button-Enviar" type="submit" >Enviar mensagem</button>
                      
                 </form>
             </div>
@@ -140,9 +144,9 @@
 
         <div id="link-contatos">
              
-                <a href="#" id="contato"><img src="./public/img/iicones/icon12.svg" alt="" id="img-icons"/><i> Igarassu | Pernambuco</i></a>
-                <a href="#" id="contato"><img src="./public/img/iicones/icon13.svg" alt="" id="img-icons"/><i> 081 99276-5185</i></a>
-                <a href="#" id="contato"><img src="./public/img/iicones/icon14.svg" alt="" id="img-icons"/><i> gabrielogabriel10@gmail.com</i></a>
+                <a id="contato"><img src="./public/img/iicones/icon12.svg" alt="" id="img-icons"/> Igarassu | Pernambuco</a>
+                <a id="contato"><img src="./public/img/iicones/icon13.svg" alt="" id="img-icons"/> 081 99276-5185</a>
+                <a id="contato"><img src="./public/img/iicones/icon14.svg" alt="" id="img-icons"/> gabrielogabriel10@gmail.com</a>
 
                 <div id="icons-contatos">
                     <a href="https://github.com/miguelgabriel01" id="icons" ><i class="fa fa-github" style="font-size: 50px;" aria-hidden="true"></i></a>
@@ -154,6 +158,7 @@
         </div>
     </section>
 
+    </main>
 
     </div>
     
@@ -166,7 +171,7 @@
     document.getElementById("loading").style.display = "none";
     document.getElementById("conteudo").style.display = "inline";
 
-}, 40);//tempo de duração*
+}, 3000);//tempo de duração*
 
     </script>
     

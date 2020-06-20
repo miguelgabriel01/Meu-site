@@ -6,6 +6,71 @@
     scroll-behavior: smooth;
 }
 
+
+
+/* Variaveis para modo claro*/
+:root{
+    --color-text:white;
+    --background-baner:url('../img/banner-imgs/img-banner.jpg');
+    --background-sobre:#010615;;
+    --background-habilidades:#18222D;
+    --background-projetos: #010615;
+
+}
+
+main{
+    /*color: var(--color-text);
+    background: var(--background-baner);
+    background-color: var(--background-sobre);*/
+    position: absolute;
+    width: 100%;
+    transition: .5s ease-in-out;
+}
+
+#light-css{
+    display: none;
+}
+
+#light-css:checked + main{
+    --color-text:#181A1B;
+    --background-baner:url('../img/banner-imgs/background2.svg');
+    --background-sobre:white;
+    --background-habilidades:whitesmoke;
+    --background-projetos: white;
+
+    transition: .5s ease-in-out;
+}
+
+/*
+#light-css:checked + main #light-modo:after{
+    content: ' on';
+}
+
+#light-modo:after{
+    content: ' off';
+}*/
+
+#light-modo{
+    text-decoration: none;
+    color: gainsboro;
+    font-size: 19px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#light-modo:hover{
+    border-bottom: 1px solid white;
+}
+
+/* Fim das variaveis*/
+
+
+/* banner */
 .header{
     width: 100%;
     height: 750px;
@@ -15,9 +80,10 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    background-image: url('../img/banner-imgs/img-banner.jpg');
+    background-image: var(--background-baner);
     background-size: cover;
     background-position: center;
+    transition: .5s ease-in-out;
 }
 
 #menu{
@@ -151,8 +217,10 @@
     height: 550px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #010615;
+    justify-content: center;/*
+    background-color: #010615;*/
+    background-color: var( --background-sobre);
+    transition: .5s ease-in-out;
 }
 
 #sobre-info{
@@ -163,10 +231,11 @@
     font-family: 'Fjalla One', sans-serif;
     font-family: 'MuseoModerno', cursive;
     font-size: 22px;
-    color: white;
+    color: var( --color-text);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s ease-in-out;
 }
 
 
@@ -178,7 +247,8 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    background-color: #18222D;
+    background-color: var( --background-habilidades);
+    transition: .5s ease-in-out;
 }
 
 .galeria{
@@ -196,7 +266,7 @@
     font-family: 'Fjalla One', sans-serif;
     font-family: 'MuseoModerno', cursive;
     font-size: 25px;
-    color: white;
+    color: var( --color-text);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +350,7 @@ slide:nth-child(1){
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: #010615;
+     background: var(--background-projetos);
  }
 
  #titulo-lista{
@@ -288,7 +358,7 @@ slide:nth-child(1){
     font-family: 'Fjalla One', sans-serif;
     font-family: 'MuseoModerno', cursive;
     font-size: 35px;
-    color: white;
+    color: var( --color-text);
  }
 
  #lista-projetos{
@@ -296,7 +366,7 @@ slide:nth-child(1){
      /*padding: 80px;*/
      height: 1400px;
      /*border: 2px solid green;*/
-     background-color: #010615;
+     background: var(--background-projetos);
      display: flex;
      flex-direction: row;
      justify-content: space-around;
@@ -330,7 +400,7 @@ slide:nth-child(1){
  }
 
  #texto-info-projetos{
-    color: gainsboro;
+    color: var( --color-text);
     font-size: 15px;
     font-family: 'Arvo', serif;
     font-family: 'Fjalla One', sans-serif;
@@ -349,7 +419,7 @@ slide:nth-child(1){
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #18222D;
+    background-color: #181A1B;
 
 }
 
@@ -384,7 +454,7 @@ form input{
     padding: 0 24px;
     margin-top: 5px;
     outline: 0;
-    background-color: #18222D;
+    background-color: #181A1B;
     margin-top: 15px;
 
 }
@@ -400,7 +470,7 @@ form textarea{
     resize: vertical;
     margin-top: 15px;
     outline: 0;
-    background-color: #18222D;
+    background-color: #181A1B;
 
 }
 
@@ -419,6 +489,7 @@ form textarea{
     font-size: 18px;
     line-height: 60px;
     transition: filter 0.2s;
+    outline: 0;
 }
 
 .button-Enviar:hover{
@@ -494,3 +565,4 @@ form textarea{
 #img-icons{
     margin-right: 10px;
 }
+
