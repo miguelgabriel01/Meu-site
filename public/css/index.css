@@ -101,6 +101,7 @@ main{
 .ul{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     flex-direction: row;
     font-family: 'Arvo', serif;
     font-family: 'Fjalla One', sans-serif;
@@ -242,8 +243,9 @@ main{
 /* Estilização da section de tecnologias usadas*/
 #habilidades{
     width: 100%;
-    height: 689px;
+    min-height: 689px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
@@ -311,7 +313,7 @@ slide:nth-child(1){
  slide:nth-child(3){
     left: 100%;
     animation-delay: 5s;
-    background-image: url("../img/techs-imgs/java2.png");
+    background-image: url("../img/techs-imgs/js2.jpg");
     background-size: cover;
     background-position: center;   
  }
@@ -364,7 +366,7 @@ slide:nth-child(1){
  #lista-projetos{
      width: 100%;
      /*padding: 80px;*/
-     height: 1400px;
+     min-height: 1400px;
      /*border: 2px solid green;*/
      background: var(--background-projetos);
      display: flex;
@@ -413,9 +415,10 @@ slide:nth-child(1){
 /*Estilização da seção de contatos*/
 #contatos{
     width: 100%;
-    height: 669px;
+    min-height: 669px;
     /*border: 1px solid orange;*/
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
